@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wheel of Fortune game by us. Spin the wheel and win exciting prizes"
+    />
+
+    <title>Wheel of Fortune | Game by us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assets/wheel.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/wheel.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
+  </head>
+  <body>
+    <audio id="bgMusic" src="./assets/bg.mp3" autoplay loop></audio>
+    <div class="container">
+      <header class="head">
+        <div class="bg-overlay"></div>
+        <div class="content">
+          <h1>Wheel of Fortune</h1>
+          <p>Spin the wheel and win exciting prizes</p>
+          <div class="tools">
+            <button id="spin">Spin</button>
+            <i class="fa fa-volume-up" id="mute"></i>
+            <i class="fa fa-refresh" onclick="setItems()"></i>
+          </div>
+          <div class="pointer"></div>
+        </div>
+      </header>
+      <div class="card" id="card">
+        <div class="ribbon">🎉 Winner! 🎉</div>
+        <div class="content">
+          <h1>Congratulations!</h1>
+          <p>You’ve won</p>
+          <img src="" class="prize" id="prize" alt="" />
+          <p class="message">Thank you for participating! Enjoy your reward!</p>
+          <button class="claim-button" id="claim">Claim Your Prize</button>
+        </div>
+      </div>
+
+      <div class="wheel" id="wheel">
+        <div class="segment">
+          <img src="" id="one" alt="" />
+        </div>
+        <div class="segment">
+          <img src="" id="two" alt="" />
+        </div>
+        <div class="segment">
+          <img src="" id="three" alt="" />
+        </div>
+        <div class="segment">
+          <img src="" id="four" alt="" />
+        </div>
+        <div class="segment">
+          <img src="" id="five" alt="" />
+        </div>
+        <div class="segment">
+          <img src="" id="six" alt="" />
+        </div>
+        <div class="segment">
+          <img src="" id="seven" alt="" />
+        </div>
+        <div class="segment">
+          <img src="" id="eight" alt="" />
+        </div>
+      </div>
+
+      <div class="won" id="won">
+        <p>You’ve won</p>
+        <div id="content">
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/wheel.js"></script>
+  </body>
+</html>
