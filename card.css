@@ -1,0 +1,97 @@
+.card {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+.card .ribbon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  background: var(--card-color);
+  color: white;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card .content h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card .content p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #555;
+}
+
+.card .prize {
+  width: 70%;
+}
+
+.card .message {
+  font-size: 1em;
+  color: #666;
+}
+
+.card .claim-button {
+  margin-top: 20px;
+  background: var(--card-color);
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card .claim-button:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 640px) {
+  .card {
+    top: 30%;
+    left: 10%;
+    width: 80%;
+  }
+
+  .card .content h1 {
+    font-size: 1.5em;
+  }
+
+  .card .content p {
+    font-size: 1em;
+  }
+
+  .card .prize {
+    font-size: 2em;
+  }
+
+  .card .message {
+    font-size: 0.8em;
+  }
+
+  .card .claim-button {
+    font-size: 1em;
+  }
+}
