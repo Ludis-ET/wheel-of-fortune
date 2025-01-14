@@ -273,6 +273,23 @@ html {
     left: 5%;
   }
 }
+
+@media (max-width: 640px) {
+  .wheel {
+    width: 500px;
+    height: 500px;
+    left: 10%;
+  }
+}
+
+@media (max-width: 470px) {
+  .wheel {
+    width: 500px;
+    height: 500px;
+    left: -10%;
+  }
+}
+
 @media (max-width: 640px) {
   .head {
     width: 80%;
