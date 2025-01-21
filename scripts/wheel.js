@@ -1,11 +1,11 @@
 const wheel = document.getElementById("wheel");
 const spinButton = document.getElementById("spin");
-const wheelSound = new Audio("../Game/assets/wheel.mp3");
+const wheelSound = new Audio("./assets/wheel.mp3");
 
 const card = document.getElementById("card");
 const prize = document.getElementById("prize");
 const claim = document.getElementById("claim");
-const claimSound = new Audio("../Game/assets/claimed.mp3");
+const claimSound = new Audio("./assets/claimed.mp3");
 
 const won = document.getElementById("won");
 const content = document.getElementById("content");
@@ -27,15 +27,15 @@ const wheelParts = [one, two, three, four, five, six, seven, eight];
 const wonFortunes = [];
 
 const fortunes = [
-  "../Game/assets/prize/beg.png",
-  "../Game/assets/prize/bere.png",
-  "../Game/assets/prize/chips.png",
-  "../Game/assets/prize/doro.png",
-  "../Game/assets/prize/nut.png",
-  "../Game/assets/prize/pc.png",
-  "../Game/assets/prize/shinkurt.png",
-  "../Game/assets/prize/vitz.png",
-  "../Game/assets/prize/ertib.png",
+  "./assets/prize/beg.png",
+  "./assets/prize/bere.png",
+  "./assets/prize/chips.png",
+  "./assets/prize/doro.png",
+  "./assets/prize/nut.png",
+  "./assets/prize/pc.png",
+  "./assets/prize/shinkurt.png",
+  "./assets/prize/vitz.png",
+  "./assets/prize/ertib.png",
 ];
 
 let shuffledFortunes = [...fortunes];
