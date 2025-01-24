@@ -1,5 +1,5 @@
 ### Title: Wheel of Fortune Game
-### Group: [Your group number]
+### Group: 5
 ### Group Members:
 | Name                 | Id         |
 |----------------------|------------|
